@@ -1,0 +1,153 @@
+/* Tambahkan ini ke style.css Anda */
+
+/* ==================
+   Gaya Umum
+================== */
+body {
+  /* Hapus properti 'top' jika tidak diperlukan lagi */
+  /* top: -220px; */
+}
+
+/* ==================
+   Gaya Seksi Rekomendasi
+================== */
+
+/* Gaya untuk judul seksi (Rekomendasi Hotel, dll.) */
+.section-title {
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 3px solid #ffc107; /* Warna warning Bootstrap */
+  font-weight: 600;
+}
+
+.recommendation-card {
+  background-color: #ffffff; /* Beri latar belakang putih */
+  border: 1px solid #dee2e6; /* Tambahkan border tipis */
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075); /* Tambahkan bayangan lembut */
+  border-radius: 0.75rem; /* Samakan radius dengan gambar */
+  overflow: hidden; /* Pastikan gambar tidak keluar dari border-radius */
+}
+
+.recommendation-card .card-img-top {
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.recommendation-card .card-body {
+  padding: 1rem;
+}
+/* Tombol Plus (+) berbentuk lingkaran */
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+/* ==================
+   Gaya Carousel (Slider)
+================== */
+
+.carousel {
+  position: relative;
+}
+
+/* Wrapper untuk ikon panah agar bisa diberi background */
+.carousel-control-icon-wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-control-icon-wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* Mengganti ikon default Bootstrap dengan Bootstrap Icons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: auto; /* Hapus lebar default */
+}
+
+/* Memposisikan panah navigasi */
+.carousel-control-prev {
+  left: -60px; /* Posisikan di luar area card */
+}
+
+.carousel-control-next {
+  right: -60px; /* Posisikan di luar area card */
+}
+
+.splide__arrow {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 45px;
+  height: 45px;
+}
+
+.splide__arrow:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.splide__arrow svg {
+  fill: white;
+  width: 20px;
+  height: 20px;
+}
+
+.splide__arrow--prev {
+  /* Diubah untuk jarak lebih jauh */
+  left: -3.5rem;
+}
+
+.splide__arrow--next {
+  /* Diubah untuk jarak lebih jauh */
+  right: -3.5rem;
+}
+
+/* Sembunyikan panah di layar mobile agar tidak menutupi konten */
+@media (max-width: 767.98px) {
+  .splide__arrows {
+    display: none;
+  }
+}
+/* Penyesuaian untuk layar kecil (mobile) */
+@media (max-width: 992px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    /* Posisikan panah di atas gambar pada mobile */
+    top: 35%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-control-prev {
+    left: 5px;
+  }
+
+  .carousel-control-next {
+    right: 5px;
+  }
+
+  /* Sembunyikan card ke-2 dan ke-3 di dalam satu slide pada mobile */
+  /* Ini akan membuat carousel menampilkan 1 card per slide */
+  .carousel-item .col-lg-4.d-none {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767.98px) {
+  /* Tampilkan hanya 1 card di mobile */
+  .carousel-item .row > * {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+}

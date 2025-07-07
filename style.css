@@ -1,18 +1,17 @@
 body {
 }
-/* Gaya untuk judul seksi (Rekomendasi Hotel, dll.) */
+
 .section-title {
   display: inline-block;
   padding-bottom: 8px;
-  border-bottom: 3px solid #ffc107; /* Warna warning Bootstrap */
+  border-bottom: 3px solid #ffc107;
   font-weight: 600;
 }
 
-/* Gaya untuk kartu "bersih" yang baru */
 .clean-card {
   display: block;
   text-decoration: none;
-  color: #212529; /* Warna teks default */
+  color: #212529;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -26,7 +25,7 @@ body {
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 0.75rem;
-  margin-bottom: 0.75rem; /* Jarak antara gambar dan teks */
+  margin-bottom: 0.75rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -36,7 +35,6 @@ body {
   text-align: center;
 }
 
-/* Penyesuaian untuk Panah Navigasi Splide.js */
 .splide__arrow {
   background-color: rgba(0, 0, 0, 0.3);
   width: 45px;
@@ -61,26 +59,21 @@ body {
   right: -3.5rem;
 }
 
-/* Sembunyikan panah di layar mobile agar tidak menutupi konten */
 @media (max-width: 767.98px) {
   .splide__arrows {
     display: none;
   }
 }
 
-/* ================================================= */
-/* === PERUBAHAN DI SINI: Untuk melebarkan kartu === */
-/* ================================================= */
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
   }
 }
-/* Penyesuaian untuk layar kecil (mobile) */
+
 @media (max-width: 992px) {
   .carousel-control-prev,
   .carousel-control-next {
-    /* Posisikan panah di atas gambar pada mobile */
     top: 35%;
     transform: translateY(-50%);
   }
@@ -99,7 +92,6 @@ body {
 }
 
 @media (max-width: 767.98px) {
-  /* Tampilkan hanya 1 card di mobile */
   .carousel-item .row > * {
     flex: 0 0 auto;
     width: 100%;

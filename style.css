@@ -1,0 +1,50 @@
+/* Hide scrollbar (optional if used later) */
+.hide-scrollbar::-webkit-scrollbar {
+display: none;
+}
+.hide-scrollbar {
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+
+body {
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+
+.skyline-bg {
+background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffffc2 90%),
+    url('img/bg_gedung.png');
+background-repeat: no-repeat;
+background-position: center bottom;
+background-size: cover;
+position: relative;
+/* top: 100px; */
+height: 330px;
+width: 100vw;
+margin-bottom: -40px;
+}
+
+/* Map illustration in form */
+.map-illustration {
+position: absolute;
+right: 1rem;
+bottom: 1rem;
+width: 6rem;
+height: 6rem;
+pointer-events: none;
+user-select: none;
+}
+
+/* City section background */
+.bg-city-banner {
+height: 224px;
+background-color: #0d6efd;
+overflow: hidden;
+}
+
+main{
+    top: -220px;
+}

@@ -226,26 +226,22 @@
       document.addEventListener("DOMContentLoaded", function () {
         const splideOptions = {
           type: "loop",
-          perPage: 3, // Tetap 3 kartu
+          perPage: 3,
           focus: "center",
           gap: "1.5rem",
           pagination: false,
           breakpoints: {
             992: {
-              // Untuk layar tablet, tampilkan 2
               perPage: 2,
             },
             768: {
-              // Untuk layar mobile, tetap 1 kartu
               perPage: 1,
             },
           },
         };
 
-        // Inisialisasi slider hotel
         new Splide("#hotel-slider", splideOptions).mount();
 
-        // Inisialisasi slider restoran
         new Splide("#restaurant-slider", splideOptions).mount();
       });
     </script>

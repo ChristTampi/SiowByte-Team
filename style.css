@@ -1,4 +1,7 @@
 body {
+  background-color: #f8f9fa;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", "Liberation Sans", sans-serif;
 }
 
 .section-title {
@@ -68,32 +71,5 @@ body {
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
-  }
-}
-
-@media (max-width: 992px) {
-  .carousel-control-prev,
-  .carousel-control-next {
-    top: 35%;
-    transform: translateY(-50%);
-  }
-
-  .carousel-control-prev {
-    left: 5px;
-  }
-
-  .carousel-control-next {
-    right: 5px;
-  }
-
-  .carousel-item .col-lg-4.d-none {
-    display: none !important;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .carousel-item .row > * {
-    flex: 0 0 auto;
-    width: 100%;
   }
 }

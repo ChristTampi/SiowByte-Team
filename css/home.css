@@ -96,16 +96,14 @@ body {
     -o-border-radius: 20px;
 }
 
-.sidebar ul li .active{
+/* .sidebar ul li .active{
     padding-top: 5px;
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    background-color: #125d72;
-    color: white;
-}
+} */
 
 .sidebar ul li :hover{
     padding-top: 5px;
@@ -147,6 +145,10 @@ main{
     overflow: hidden;
 }
 
+#menuToggle:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.314);
+    transition: box-shadow 0.3s ease;
+}
 footer li a{
     color: rgb(208, 208, 208);
 }

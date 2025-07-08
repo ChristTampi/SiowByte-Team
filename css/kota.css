@@ -1,0 +1,13 @@
+.justify-text {
+    text-align: justify !important;
+    hyphens: auto;
+}
+
+.card-kota:hover{
+    transform: scale(1.02); 
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.366) !important;
+    transition: box-shadow 0.3s ease;
+}
+.card-kota:hover i{
+    transform: scale(1.4);
+}

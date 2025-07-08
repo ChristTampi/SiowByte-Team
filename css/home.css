@@ -22,44 +22,18 @@ body {
     transition: 0.3s ease;
 }
 
-#menuToggle .bar { 
-    width: 20px; 
-    height: 2px; 
-    background-color: #333; 
-    margin: 3px 0; 
-    transition: 0.4s; 
-    -webkit-transition: 0.4s; 
-    -moz-transition: 0.4s; 
-    -ms-transition: 0.4s; 
-    -o-transition: 0.4s;
+#menuToggle:hover{
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.314);
+    transition: box-shadow 0.3s ease;
 }
 
-
-#menuToggle.active .bar:nth-child(1) {
-    transform: rotate(45deg) 
-    translate(4px, 4px);
-    -webkit-transform: rotate(45deg) translate(4px, 4px);
-    -moz-transform: rotate(45deg) translate(4px, 4px);
-    -ms-transform: rotate(45deg) translate(4px, 4px);
-    -o-transform: rotate(45deg) translate(4px, 4px);
-}
-#menuToggle.active .bar:nth-child(2) {
-    opacity: 0;
-}
-#menuToggle.active .bar:nth-child(3) { 
-    transform: rotate(-45deg) 
-    translate(4px, -4px); 
-    -webkit-transform: 
-    rotate(-45deg) 
-    translate(4px, -4px); 
-    -moz-transform: rotate(-45deg) 
-    translate(4px, -4px); 
-    -ms-transform: rotate(-45deg) 
-    translate(4px, -4px); 
-    -o-transform: rotate(-45deg) 
-    translate(4px, -4px);
+.icon-transition {
+    transition: transform 0.4s ease;
 }
 
+.icon-rotate {
+    transform: rotate(180deg);
+}
 
 .sidebar { 
     position: fixed; 
@@ -95,15 +69,6 @@ body {
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-
-/* .sidebar ul li .active{
-    padding-top: 5px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-} */
 
 .sidebar ul li :hover{
     padding-top: 5px;
@@ -145,10 +110,6 @@ main{
     overflow: hidden;
 }
 
-#menuToggle:hover{
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.314);
-    transition: box-shadow 0.3s ease;
-}
 footer li a{
     color: rgb(208, 208, 208);
 }

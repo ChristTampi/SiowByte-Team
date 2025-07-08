@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citymapper Clone - Visit Sulutenggo</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/rute.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success px-3">
+    <div class="d-flex align-items-center gap-2">
+    <button class="btn btn-outline-light d-lg-none">
+        <i class="fas fa-bars"></i>
+    </button>
+    <div class="logo text-white fw-bold d-flex align-items-center">
+        <img src="https://img.icons8.com/emoji/48/compass-emoji.png" width="28" alt="logo">
+        Citymapper
+        <span class="emoji">😍</span>
+    </div>
+    </div>
+    <div class="ms-auto">
+    <button class="btn btn-light fw-semibold">Get Me Somewhere</button>
+    </div>
+</nav>
+
+<!-- Main Section -->
+<main class="d-flex flex-column flex-md-row h-100">
+
+    <!-- Sidebar kiri -->
+    <aside class="sidebar p-4 bg-success text-white">
+    <div class="city-info text-center mb-4">
+        <div class="illustration">👦🏻</div>
+        <h5 class="mb-0">Singapore</h5>
+        <small>Switch City</small>
+    </div>
+
+    <form class="route-form">
+        <div class="mb-3">
+        <label class="form-label small">Start</label>
+        <input type="text" class="form-control" value="Raffles Place">
+        </div>
+        <div class="mb-3">
+        <label class="form-label small">End</label>
+        <div class="input-group">
+            <input type="text" class="form-control" value="Tiong Bahru Plaza">
+            <button class="btn btn-outline-light" type="button">
+            <i class="bi bi-arrow-down-up"></i>
+            </button>
+        </div>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+        <div class="text-light small">Now</div>
+        <button class="btn btn-light btn-sm">Set</button>
+        </div>
+
+        <div class="travel-options">
+        <div class="option d-flex justify-content-between">
+            <span>🚶 50 min</span>
+            <span class="text-end">Leave 18:29</span>
+        </div>
+        <div class="option d-flex justify-content-between">
+            <span>🚴 29 min</span>
+            <span>Leave 18:50</span>
+        </div>
+        <div class="option d-flex justify-content-between">
+            <span>🚕 12 min</span>
+            <span>Leave 19:07</span>
+        </div>
+        </div>
+
+        <div class="result-list">
+        <div class="result small">EW — Leave 19:07 — $1.29</div>
+        <div class="result small">Bus 851 — Leave 18:58 — $1.29</div>
+        </div>
+    </form>
+    </aside>
+
+    <div class="map-container flex-fill">
+    <div id="map" style="width: 100%; height: 100%;"></div>
+    </div>
+</main>
+
+<!-- Bootstrap & FontAwesome -->
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Google Maps & Custom JS -->
+<script src="js/rute.js"></script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOhhgDpKkyJNZOVuT7hi6Rcr3Dn5_Kigo&callback=initMap"></script>
+
+</body>
+</html>

@@ -106,6 +106,16 @@ body {
     background-color: #125d72;
     color: white;
 }
+
+.sidebar ul li :hover{
+    padding-top: 5px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #d9d9d9;
+}
 #navbar.scrolled {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -130,20 +140,10 @@ main{
     top: -220px;
 }
 
-.map-illustration {
-    position: absolute;
-    right: 1rem;
-    bottom: 1rem;
-    width: 6rem;
-    height: 6rem;
-    pointer-events: none;
-    user-select: none;
-}
-
 
 .bg-city-banner {
-    height: 224px;
-    background-color: #0d6efd;
+    height: 270px;
+    background-color: #14a2ba;
     overflow: hidden;
 }
 

@@ -22,12 +22,7 @@ background: none;
 transition: 0.3s ease;
 }
 
-#menuToggle .bar {
-width: 20px;
-height: 2px;
-background-color: #333;
-margin: 3px 0;
-transition: 0.4s;
+#menuToggle .bar { width: 20px; height: 2px; background-color: #333; margin: 3px 0; transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -ms-transition: 0.4s; -o-transition: 0.4s;
 }
 
 

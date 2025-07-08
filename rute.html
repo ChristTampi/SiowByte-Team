@@ -5,98 +5,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Citymapper Clone - Visit Sulutenggo</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="css/rute.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-success px-3">
-    <div class="d-flex align-items-center gap-2">
-    <button class="btn btn-outline-light d-lg-none">
-        <i class="fas fa-bars"></i>
-    </button>
-    <div class="logo text-white fw-bold d-flex align-items-center">
-        <img src="https://img.icons8.com/emoji/48/compass-emoji.png" width="28" alt="logo">
-        Citymapper
-        <span class="emoji">😍</span>
-    </div>
-    </div>
-    <div class="ms-auto">
-    <button class="btn btn-light fw-semibold">Get Me Somewhere</button>
-    </div>
-</nav>
-
-<!-- Main Section -->
-<main class="d-flex flex-column flex-md-row h-100">
-
-    <!-- Sidebar kiri -->
-    <aside class="sidebar p-4 bg-success text-white">
-    <div class="city-info text-center mb-4">
-        <div class="illustration">👦🏻</div>
-        <h5 class="mb-0">Singapore</h5>
-        <small>Switch City</small>
+    <div id="sidebar" class="sidebar bg-white shadow">
+        <ul class="list-unstyled m-0 p-4">
+            <li><a href="home.html" class="text-decoration-none d-block py-2">Beranda</a></li>
+            <li><a href="rute.html" class="text-decoration-none d-block py-2" style="padding-top: 5px;border-radius: 20px;background-color: #125d72;color: white;">Rute</a></li>
+            <li><a href="#" class="text-decoration-none d-block py-2">Kota Kami</a></li>
+            <li><a href="#" class="text-decoration-none d-block py-2">Wisata & Agen Travel</a></li>
+            <li><a href="#" class="text-decoration-none d-block py-2">Hotel & Restoran</a></li>
+            <li><a href="#" class="text-decoration-none d-block py-2">Tentang Kami</a></li>
+            <li><a href="#" class="text-decoration-none d-block py-2">Kontak</a></li>
+        </ul>
     </div>
 
-    <form class="route-form">
-        <div class="mb-3">
-        <label class="form-label small">Start</label>
-        <input type="text" class="form-control" value="Raffles Place">
-        </div>
-        <div class="mb-3">
-        <label class="form-label small">End</label>
-        <div class="input-group">
-            <input type="text" class="form-control" value="Tiong Bahru Plaza">
-            <button class="btn btn-outline-light" type="button">
-            <i class="bi bi-arrow-down-up"></i>
-            </button>
-        </div>
-        </div>
+    <header class="position-static">
+        <nav id="navbar" class="navbar navbar-light bg-white sticky-top py-2 px-3 d-flex align-items-center">
+            <div class="d-flex align-items-center gap-2">
+                <button id="menuToggle" class="btn btn-light bg-light p-2 d-flex justify-content-center align-items-center">
+                    <i id="menuIcon" class="fa-solid fa-bars-staggered icon-transition"></i>
+                </button>
 
-        <div class="d-flex justify-content-between align-items-center mb-3">
-        <div class="text-light small">Now</div>
-        <button class="btn btn-light btn-sm">Set</button>
-        </div>
+                <div class="d-flex align-items-center gap-2 bg-light px-2 py-1 rounded">
+                    <strong>VisitSulutenggo</strong>
+                </div>
+                <!-- <button class="btn btn-light ms-2">😍</button> -->
+            </div>
 
-        <div class="travel-options">
-        <div class="option d-flex justify-content-between">
-            <span>🚶 50 min</span>
-            <span class="text-end">Leave 18:29</span>
-        </div>
-        <div class="option d-flex justify-content-between">
-            <span>🚴 29 min</span>
-            <span>Leave 18:50</span>
-        </div>
-        <div class="option d-flex justify-content-between">
-            <span>🚕 12 min</span>
-            <span>Leave 19:07</span>
-        </div>
-        </div>
+            <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center gap-2 bg-light px-2 py-1 rounded">
+                    <img src="img/logo.png" width="24" alt="logo" />
+                </div>
+            </div>
+        </nav>
+    </header>
 
-        <div class="result-list">
-        <div class="result small">EW — Leave 19:07 — $1.29</div>
-        <div class="result small">Bus 851 — Leave 18:58 — $1.29</div>
-        </div>
-    </form>
-    </aside>
+    <main>
+        <!-- Left Panel -->
+        <aside id="leftPanel">
 
-    <div class="map-container flex-fill">
-    <div id="map" style="width: 100%; height: 100%;"></div>
-    </div>
-</main>
+            <!-- City Card -->
+            <div class="city-card mb-md-3">
+                <svg class="city-icon" viewBox="0 0 64 64">
+                    <circle cx="28" cy="20" r="12" />
+                    <line x1="16" y1="61" x2="39" y2="60" />
+                    <path d="M28 32v23M18 56l-9-11M41 44v10" />
+                </svg>
+                <div class="city-content">
+                    <h2>Manado</h2>
+                    <p>Ubah Kota</p>
+                </div>
+            </div>
 
-<!-- Bootstrap & FontAwesome -->
-<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+            <!-- Route Form -->
+            <div class="mb-3">
+            <h6 class="p-1" style="color: #125d72;">Pilih Perjalanan</h6>
+            <form id="routeForm">
+                <div class="form-group">
+                    <label for="startInput">Mulai</label>
+                    <div class="input-container">
+                        <input id="startInput" name="start" type="search" placeholder="Tempat Asal" value="Sam Ratulangi" autocomplete="off" required>
+                        <button type="button" id="swapLocations" class="swap-btn">⇅</button>
+                        <button type="button" id="clearStart" class="clear-btn">×</button>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="endInput">Akhir</label>
+                    <div class="input-container">
+                        <input id="endInput" name="end" type="search" placeholder="Tempat Tujuan" value="PT Media Makasiow Indonesia" autocomplete="off" required>
+                        <button type="button" id="clearEnd" class="clear-btn">×</button>
+                    </div>
+                </div>
+                
+                <div class="time-controls">
+                    <!-- <div class="time-options">
+                        <label>
+                            <input type="radio" name="arrivalLeave" value="now" checked>
+                            <span>Now</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="arrivalLeave" value="arrive">
+                            <span class="active">Arrive</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="arrivalLeave" value="leave">
+                            <span>Leave</span>
+                        </label>
+                    </div> -->
+                    
+                    <div id="dateTimeControls" class="time-inputs">
+                        <!-- <select id="dateSelect">
+                            <option value="today" selected>Today</option>
+                            <option value="tomorrow">Tomorrow</option>
+                            <option value="dayafter">Day after</option>
+                        </select>
+                        <input type="number" id="hourInput" min="0" max="23" value="19">
+                        <span>:</span>
+                        <input type="number" id="minuteInput" min="0" max="59" value="20"> -->
+                        <button class="ms-auto btn btn-warning text-black" id="setTimeBtn">Set</button>
+                    </div>
+                </div>
+            </form>
+            </div>
+            
+            <!-- Mode Summary -->
+            <h6 class="p-1" style="color: #125d72;">Transportasi</h6>
+            <div id="modeSummary">
+                <div class="mode-card">
+                    <i class="fa-solid fa-person-walking" style="font-size: 30px; padding-bottom:10px;padding-top:5px"></i>
+                    <div class="mode-name">Jalan Kaki</div>
+                    <div class="mode-time">50 <span class="mode-unit">min</span></div>
+                    <div class="mode-subtext">Leave 18:29</div>
+                </div>
+                
+                <div class="mode-card active">
+                    <i class="fa-solid fa-motorcycle" style="font-size: 30px; padding-bottom:10px;padding-top:5px"></i>
+                    <div class="mode-name">Motor</div>
+                    <div class="mode-time">29 <span class="mode-unit">min</span></div>
+                    <div class="mode-subtext">Leave 18:50</div>
+                </div>
+                
+                <div class="mode-card">
+                    <i class="fa-solid fa-car" style="font-size: 30px; padding-bottom:10px;padding-top:5px"></i>
+                    <div class="mode-name">Mobil</div>
+                    <div class="mode-time">12 <span class="mode-unit">min</span></div>
+                    <div class="mode-subtext">Leave 19:07</div>
+                </div>
+                
+                <div class="mode-card">
+                    <i class="fa-solid fa-van-shuttle" style="font-size: 30px; padding-bottom:10px;padding-top:5px"></i>
+                    <div class="mode-name">Angkot</div>
+                    <div class="mode-time">12 <span class="mode-unit">min</span></div>
+                    <div class="mode-subtext">Leave 19:07</div>
+                </div>
+            </div>
+            
+            
+            <h6 class="p-1" style="color: #125d72;">Perkiraan</h6>
+            <section id="routesContainer">
+                <div class="route-card fade-in">
+                    <div class="route-header">
+                        <div class="route-price">$1.29</div>
+                        <div class="route-duration">11 min</div>
+                    </div>
+                    <div class="route-time">Leave 19:07</div>
+                    <div class="route-legs">
+                        <div class="route-leg">EW Line</div>
+                    </div>
+                </div>
+                
+                <div class="route-card fade-in">
+                    <div class="route-header">
+                        <div class="route-price">$1.29</div>
+                        <div class="route-duration">20 min</div>
+                    </div>
+                    <div class="route-time">Leave 18:58</div>
+                    <div class="route-legs">
+                        <div class="route-leg">Bus 851</div>
+                        <div class="route-leg">EW Line</div>
+                    </div>
+                </div>
+                
+                <div class="route-card fade-in">
+                    <div class="route-header">
+                        <div class="route-price">$1.50</div>
+                        <div class="route-duration">25 min</div>
+                    </div>
+                    <div class="route-time">Leave 18:55</div>
+                    <div class="route-legs">
+                        <div class="route-leg">NS Line</div>
+                        <div class="route-leg">Bus 5</div>
+                    </div>
+                </div>
+                
+                <div class="route-card fade-in">
+                    <div class="route-header">
+                        <div class="route-price">$1.35</div>
+                        <div class="route-duration">28 min</div>
+                    </div>
+                    <div class="route-time">Leave 18:52</div>
+                    <div class="route-legs">
+                        <div class="route-leg">Bus 33</div>
+                        <div class="route-leg">DT Line</div>
+                    </div>
+                </div>
+            </section>
+        </aside>
 
-<!-- Google Maps & Custom JS -->
-<script src="js/rute.js"></script>
-<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOhhgDpKkyJNZOVuT7hi6Rcr3Dn5_Kigo&callback=initMap"></script>
+        <!-- Map Container -->
+        <div id="map"></div>
+    </main>
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOhhgDpKkyJNZOVuT7hi6Rcr3Dn5_Kigo&callback=initMap" async defer></script>
+    <script src="js/rute.js"></script>
+    <script src="js/home.js"></script>
 </body>
 </html>

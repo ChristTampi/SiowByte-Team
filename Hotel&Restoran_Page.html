@@ -10,7 +10,15 @@
       rel="stylesheet"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
       rel="stylesheet"
     />
 
@@ -22,12 +30,63 @@
     <link rel="stylesheet" href="HotelRestoran.css" />
   </head>
   <body class="bg-light">
-    <header
-      class="bg-white border-bottom sticky-top py-3 px-4 d-flex justify-content-between align-items-center shadow-sm"
-    >
-      <div class="text-muted fw-semibold">
-        Visit <span class="text-warning">suluttenggo</span>
-      </div>
+    <div id="sidebar" class="sidebar bg-white shadow">
+      <ul class="list-unstyled m-0 p-4">
+        <li>
+          <a href="#" class="text-decoration-none d-block py-2">Beranda</a>
+        </li>
+        <li><a href="#" class="text-decoration-none d-block py-2">Rute</a></li>
+        <li>
+          <a href="#" class="text-decoration-none d-block py-2">Kota Kami</a>
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none d-block py-2"
+            >Wisata & Agen Travel</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none d-block py-2 active"
+            >Hotel & Restoran</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none d-block py-2">Tentang Kami</a>
+        </li>
+        <li>
+          <a href="#" class="text-decoration-none d-block py-2">Kontak</a>
+        </li>
+      </ul>
+    </div>
+
+    <header class="position-static">
+      <nav
+        id="navbar"
+        class="navbar navbar-light bg-white sticky-top py-2 px-3 d-flex align-items-center"
+      >
+        <div class="d-flex align-items-center gap-2">
+          <button
+            id="menuToggle"
+            class="btn btn-light bg-light p-2 d-flex flex-column justify-content-center align-items-center"
+          >
+            <i class="fa-solid fa-bars-staggered"></i>
+          </button>
+          <div
+            class="d-flex align-items-center gap-2 bg-light px-2 py-1 rounded"
+          >
+            <img src="img/logo.png" width="24" alt="logo" />
+            <strong>VisitSulutenggo</strong>
+          </div>
+        </div>
+        <div class="d-flex align-items-center">
+          <div class="d-flex bg-dark rounded overflow-hidden">
+            <button class="btn btn-dark"><i class="bi bi-apple"></i></button>
+            <button class="btn btn-dark"><i class="bi bi-android2"></i></button>
+            <button class="btn btn-dark text-white fw-semibold">
+              Get Me Somewhere
+            </button>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main class="container py-5">
@@ -35,7 +94,6 @@
         <div class="text-center mb-5">
           <h2 class="section-title">Rekomendasi Hotel di Manado</h2>
         </div>
-
         <div class="splide" id="hotel-slider">
           <div class="splide__track">
             <ul class="splide__list">
@@ -49,7 +107,6 @@
                   <div class="clean-card-title">Hotel Pertama</div>
                 </a>
               </li>
-
               <li class="splide__slide">
                 <a href="#" class="clean-card">
                   <img
@@ -60,7 +117,6 @@
                   <div class="clean-card-title">Hotel Kedua</div>
                 </a>
               </li>
-
               <li class="splide__slide">
                 <a href="#" class="clean-card">
                   <img
@@ -71,29 +127,8 @@
                   <div class="clean-card-title">Hotel Ketiga</div>
                 </a>
               </li>
-
-              <li class="splide__slide">
-                <a href="#" class="clean-card">
-                  <img
-                    class="clean-card-img"
-                    src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?q=80&w=2070&auto=format&fit=crop"
-                    alt="Hotel Keempat"
-                  />
-                  <div class="clean-card-title">Hotel Keempat</div>
-                </a>
-              </li>
             </ul>
           </div>
-        </div>
-
-        <div class="text-center mt-5">
-          <a
-            href="#"
-            class="btn btn-warning fw-semibold rounded-pill px-4 py-2"
-          >
-            Selengkapnya
-            <i class="bi bi-arrow-right-short"></i>
-          </a>
         </div>
       </section>
 
@@ -114,7 +149,6 @@
                   <div class="clean-card-title">Restoran Satu</div>
                 </a>
               </li>
-
               <li class="splide__slide">
                 <a href="#" class="clean-card">
                   <img
@@ -125,40 +159,8 @@
                   <div class="clean-card-title">Restoran Dua</div>
                 </a>
               </li>
-
-              <li class="splide__slide">
-                <a href="#" class="clean-card">
-                  <img
-                    class="clean-card-img"
-                    src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974&auto=format&fit=crop"
-                    alt="Restoran Tiga"
-                  />
-                  <div class="clean-card-title">Restoran Tiga</div>
-                </a>
-              </li>
-
-              <li class="splide__slide">
-                <a href="#" class="clean-card">
-                  <img
-                    class="clean-card-img"
-                    src="https://images.unsplash.com/photo-1578474846511-04ba529f0b88?q=80&w=1974&auto=format&fit=crop"
-                    alt="Restoran Empat"
-                  />
-                  <div class="clean-card-title">Restoran Empat</div>
-                </a>
-              </li>
             </ul>
           </div>
-        </div>
-
-        <div class="text-center mt-5">
-          <a
-            href="#"
-            class="btn btn-warning fw-semibold rounded-pill px-4 py-2"
-          >
-            Selengkapnya
-            <i class="bi bi-arrow-right-short"></i>
-          </a>
         </div>
       </section>
     </main>
@@ -168,59 +170,40 @@
         <div class="row g-4">
           <div class="col-md">
             <h5 class="text-warning">Visit Suluttenggo</h5>
-            <p class="text-muted">Searching How Wonderful Us</p>
+            <p>Searching How Wonderful Us</p>
           </div>
           <div class="col-md">
             <h6 class="text-light">Site</h6>
             <ul class="list-unstyled small">
-              <li>
-                <a href="#" class="text-muted text-decoration-none"
-                  >Our Cities</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-muted text-decoration-none">Hot Maps</a>
-              </li>
-              <li>
-                <a href="#" class="text-muted text-decoration-none">News</a>
-              </li>
-              <li>
-                <a href="#" class="text-muted text-decoration-none">Links</a>
-              </li>
+              <li><a href="#" class="text-decoration-none">Our Cities</a></li>
+              <li><a href="#" class="text-decoration-none">Hot Maps</a></li>
+              <li><a href="#" class="text-decoration-none">News</a></li>
+              <li><a href="#" class="text-decoration-none">Links</a></li>
             </ul>
           </div>
           <div class="col-md">
             <h6 class="text-light">Company</h6>
-            <ul class="list-unstyled small">
-              <li>
-                <a href="#" class="text-muted text-decoration-none">Maps</a>
-              </li>
-              <li>
-                <a href="#" class="text-muted text-decoration-none"
-                  >Advertising</a
-                >
-              </li>
-              <li>
-                <a href="#" class="text-muted text-decoration-none"
-                  >Projects Kit</a
-                >
-              </li>
+            <ul class="list-unstyled small text-light">
+              <li><a href="#" class="text-decoration-none">Maps</a></li>
+              <li><a href="#" class="text-decoration-none">Advertising</a></li>
+              <li><a href="#" class="text-decoration-none">Projects Kit</a></li>
             </ul>
           </div>
-          <div class="col-md small text-muted">
-            <p>Contact Us</p>
-            <p>Jobs</p>
-            <p>Terms</p>
+          <div class="col-md">
+            <h6 class="text-light">Contact Us</h6>
+            <ul class="list-unstyled small text-light">
+              <li><a href="#" class="text-decoration-none">Jobs</a></li>
+              <li><a href="#" class="text-decoration-none">Terms</a></li>
+            </ul>
           </div>
-        </div>
-        <div class="text-center mt-4 small text-secondary">
-          Created by Makelakan
         </div>
       </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+
+    <script src="HR.js"></script>
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
@@ -231,17 +214,11 @@
           gap: "1.5rem",
           pagination: false,
           breakpoints: {
-            992: {
-              perPage: 2,
-            },
-            768: {
-              perPage: 1,
-            },
+            992: { perPage: 2 },
+            768: { perPage: 1 },
           },
         };
-        //
         new Splide("#hotel-slider", splideOptions).mount();
-
         new Splide("#restaurant-slider", splideOptions).mount();
       });
     </script>

@@ -5,52 +5,76 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background-color: #f8f9fa;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  font-family: "Poppins", sans-serif; /* Menggunakan font Poppins dari home */
 }
 
 /* =================================
-   Style Asli Anda (Dipertahankan)
+   Dari home.css (Header, Sidebar, Footer)
 ================================= */
-
-/* Utility untuk menyembunyikan scrollbar */
-.hide-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.hide-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+#menuToggle {
+  width: 34px;
+  height: 34px;
+  border: none;
+  background: none;
+  transition: 0.3s ease;
 }
 
-/* Background & Ilustrasi dari kode lama */
-.skyline-bg {
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffffc2 90%),
-    url("img/bg_gedung.png"); /* Pastikan path gambar ini benar */
-  background-repeat: no-repeat;
-  background-position: center bottom;
-  background-size: cover;
-  position: relative;
-  height: 330px;
-  width: 100vw;
-  margin-bottom: -40px;
+#navbar.scrolled {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
 }
 
-.map-illustration {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  width: 6rem;
-  height: 6rem;
-  pointer-events: none;
-  user-select: none;
+.sidebar {
+  position: fixed;
+  top: 53.5px;
+  left: -250px;
+  width: 250px;
+  height: calc(100% - 54px);
+  background-color: white;
+  z-index: 1040;
+  transition: all 0.3s ease;
 }
 
-.bg-city-banner {
-  height: 224px;
-  background-color: #0d6efd;
-  overflow: hidden;
+.sidebar.show {
+  left: 0;
 }
+
+.sidebar ul li a {
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.sidebar ul li {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-radius: 20px;
+}
+
+.sidebar ul li a.active {
+  background-color: #125d72;
+  color: white;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.sidebar ul li:hover {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+}
+
+footer li a {
+  color: rgb(208, 208, 208);
+}
+footer li a:hover {
+  color: white;
+}
+
+/* =================================
+   Dari HotelRestoran.css (Konten Utama)
+================================= */
 
 /* Judul Seksi */
 .section-title {
@@ -105,28 +129,9 @@ body {
   height: 20px;
 }
 
-.splide__arrow--prev {
-  left: -3.5rem;
-}
-
-.splide__arrow--next {
-  right: -3.5rem;
-}
-
-/* =================================
-   Penyesuaian Layout Responsif
-================================= */
-
 /* Sembunyikan panah di layar mobile */
 @media (max-width: 767.98px) {
   .splide__arrows {
     display: none;
-  }
-}
-
-/* Jadikan kontainer utama sedikit lebih lebar di layar besar */
-@media (min-width: 1400px) {
-  .container {
-    max-width: 1320px;
   }
 }

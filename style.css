@@ -52,16 +52,6 @@ body {
   overflow: hidden;
 }
 
-/* Penyesuaian posisi main dari kode lama */
-main {
-  /* Properti ini mungkin perlu disesuaikan atau dihapus tergantung layout akhir Anda */
-  /* top: -220px; */
-}
-
-/* =================================
-   Style Baru Untuk Komponen Slider
-================================= */
-
 /* Judul Seksi */
 .section-title {
   display: inline-block;

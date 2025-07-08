@@ -1,95 +1,152 @@
 
 .hide-scrollbar::-webkit-scrollbar {
-display: none;
+    display: none;
 }
 .hide-scrollbar {
--ms-overflow-style: none;
-scrollbar-width: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 body {
-margin: 0;
-padding: 0;
-overflow-x: hidden;
-font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins';
 }
 
 #menuToggle {
-width: 34px;
-height: 34px;
-border: none;
-background: none;
-transition: 0.3s ease;
+    width: 34px;
+    height: 34px;
+    border: none;
+    background: none;
+    transition: 0.3s ease;
 }
 
-#menuToggle .bar { width: 20px; height: 2px; background-color: #333; margin: 3px 0; transition: 0.4s; -webkit-transition: 0.4s; -moz-transition: 0.4s; -ms-transition: 0.4s; -o-transition: 0.4s;
+#menuToggle .bar { 
+    width: 20px; 
+    height: 2px; 
+    background-color: #333; 
+    margin: 3px 0; 
+    transition: 0.4s; 
+    -webkit-transition: 0.4s; 
+    -moz-transition: 0.4s; 
+    -ms-transition: 0.4s; 
+    -o-transition: 0.4s;
 }
 
 
 #menuToggle.active .bar:nth-child(1) {
-transform: rotate(45deg) translate(4px, 4px);
+    transform: rotate(45deg) 
+    translate(4px, 4px);
+    -webkit-transform: rotate(45deg) translate(4px, 4px);
+    -moz-transform: rotate(45deg) translate(4px, 4px);
+    -ms-transform: rotate(45deg) translate(4px, 4px);
+    -o-transform: rotate(45deg) translate(4px, 4px);
 }
 #menuToggle.active .bar:nth-child(2) {
-opacity: 0;
+    opacity: 0;
 }
-#menuToggle.active .bar:nth-child(3) {
-transform: rotate(-45deg) translate(4px, -4px);
+#menuToggle.active .bar:nth-child(3) { 
+    transform: rotate(-45deg) 
+    translate(4px, -4px); 
+    -webkit-transform: 
+    rotate(-45deg) 
+    translate(4px, -4px); 
+    -moz-transform: rotate(-45deg) 
+    translate(4px, -4px); 
+    -ms-transform: rotate(-45deg) 
+    translate(4px, -4px); 
+    -o-transform: rotate(-45deg) 
+    translate(4px, -4px);
 }
 
 
-.sidebar {
-position: fixed;
-top: 53.5px;
-left: -250px;
-width: 250px;
-height: calc(100% - 64px);
-background-color: white;
-z-index: 1040;
-transition: all 0.3s ease;
+.sidebar { 
+    position: fixed; 
+    top: 53.5px; 
+    left: -250px; 
+    width: 250px; 
+    height: calc(100% - 64px); 
+    background-color: white; 
+    z-index: 1040; 
+    transition: all 0.3s ease; 
+    -webkit-transition: all 0.3s ease; 
+    -moz-transition: all 0.3s ease; 
+    -ms-transition: all 0.3s ease; 
+    -o-transition: all 0.3s ease;
 }
+
 .sidebar.show {
-left: 0;
+    left: 0;
 }
 
-/* Sticky shadow */
+.sidebar ul li a{
+    color: black;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.sidebar ul li{
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.sidebar ul li .active{
+    padding-top: 5px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: #125d72;
+    color: white;
+}
 #navbar.scrolled {
-box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-position: fixed;
-width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
 }
 
 .skyline-bg {
-background: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffffc2 90%),
-    url('img/bg_gedung.png');
-background-repeat: no-repeat;
-background-position: center bottom;
-background-size: cover;
-position: relative;
-/* top: 100px; */
-height: 330px;
-width: 100vw;
-margin-bottom: -40px;
-}
-
-
-.map-illustration {
-position: absolute;
-right: 1rem;
-bottom: 1rem;
-width: 6rem;
-height: 6rem;
-pointer-events: none;
-user-select: none;
-}
-
-
-.bg-city-banner {
-height: 224px;
-background-color: #0d6efd;
-overflow: hidden;
+    background: 
+        linear-gradient(to bottom, rgba(139, 139, 139, 0), #ffffffc2 90%),
+        url('../img/bg_gedung.png');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    position: relative;
+    /* top: 100px; */
+    height: 330px;
+    width: 100vw;
+    margin-bottom: -40px;
 }
 
 main{
     top: -220px;
+}
+
+.map-illustration {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    width: 6rem;
+    height: 6rem;
+    pointer-events: none;
+    user-select: none;
+}
+
+
+.bg-city-banner {
+    height: 224px;
+    background-color: #0d6efd;
+    overflow: hidden;
+}
+
+footer li a{
+    color: rgb(208, 208, 208);
 }

@@ -1,0 +1,194 @@
+/* --- PENGATURAN DASAR & STICKY FOOTER --- */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main#page-content {
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+footer#page-footer {
+  flex-shrink: 0;
+}
+
+/* --- ELEMEN UTAMA & LOGIKA PERGESERAN SIDEBAR --- */
+header {
+  transition: margin-left 0.3s ease;
+}
+
+main.content-shifted,
+header.content-shifted {
+  margin-left: 250px;
+}
+
+/* --- HEADER & TOMBOL MENU --- */
+header {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1030;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+#menuToggle {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #eee;
+  background-color: #f8f9fa;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  z-index: 1040;
+  transition: left 0.3s ease;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.show {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 1rem;
+  margin-top: 60px;
+}
+
+.sidebar ul li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 10px 15px;
+  border-radius: 50px;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.sidebar ul li a:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar ul li a.active {
+  background-color: #125d72;
+  color: #fff;
+}
+
+/* --- KONTEN HALAMAN: JUDUL & PENCARIAN --- */
+.section-title-custom {
+  display: inline-block;
+  position: relative;
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 10px;
+  margin-bottom: 1rem;
+}
+
+.section-title-custom::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 4px;
+  background-color: #ffc107;
+}
+
+.search-container .form-control:focus {
+  box-shadow: none;
+  border-color: #125d72;
+}
+
+/* ================================================== */
+/* === PERBAIKAN UTAMA DI SINI UNTUK ANIMASI KARTU === */
+/* ================================================== */
+
+.hotel-card-item {
+  /* Transisi hanya untuk opacity dan transform saat filter */
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+/* Kelas ini hanya untuk memulai animasi fade-out */
+.hotel-card-item.is-hiding {
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+/* ================================================== */
+
+.hotel-card {
+  display: block;
+  text-decoration: none;
+  color: #212529;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hotel-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+}
+
+.hotel-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.hotel-card-body {
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hotel-card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.hotel-card-location {
+  font-size: 0.9rem;
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+/* --- RESPONSIVE DESIGN --- */
+@media (max-width: 991.98px) {
+  main#page-content {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .section-title-custom {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  main.content-shifted,
+  header.content-shifted {
+    margin-left: 0;
+  }
+  .section-title-custom {
+    font-size: 1.5rem;
+  }
+  .hotel-card img {
+    height: 200px;
+  }
+}

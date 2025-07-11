@@ -23,45 +23,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-white">
-    <div id="sidebar" class="sidebar bg-white shadow">
-      <ul class="list-unstyled m-0 p-4">
-        <li>
-          <a href="home.html" class="text-decoration-none d-block py-2"
-            >Beranda</a
-          >
-        </li>
-        <li><a href="#" class="text-decoration-none d-block py-2">Rute</a></li>
-        <li>
-          <a href="#" class="text-decoration-none d-block py-2">Kota Kami</a>
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none d-block py-2"
-            >Wisata & Agen Travel</a
-          >
-        </li>
-        <li>
-          <a
-            href="list-resto.html"
-            class="text-decoration-none d-block py-2"
-            style="
-              padding-top: 5px;
-              border-radius: 20px;
-              background-color: #125d72;
-              color: white;
-            "
-            >Hotel & Restoran</a
-          >
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none d-block py-2">Tentang Kami</a>
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none d-block py-2">Kontak</a>
-        </li>
-      </ul>
-    </div>
-
+  <body class="bg-light">
     <header class="position-static">
       <nav
         id="navbar"
@@ -81,48 +43,95 @@
           <div
             class="d-flex align-items-center gap-2 bg-light px-2 py-1 rounded"
           >
-            <img src="img/logo.png" width="24" alt="logo" />
-            <strong>VisitSulutenggo</strong>
+            <strong>Visit<span class="text-warning">Sulutenggo</span></strong>
           </div>
         </div>
 
         <div class="d-flex align-items-center">
-          <div class="d-flex bg-dark rounded overflow-hidden">
-            <button class="btn btn-dark"><i class="bi bi-apple"></i></button>
-            <button class="btn btn-dark"><i class="bi bi-android2"></i></button>
-            <button class="btn btn-dark text-white fw-semibold">
-              Get Me Somewhere
-            </button>
+          <div
+            class="d-flex align-items-center gap-2 bg-light px-2 py-1 rounded"
+          >
+            <img src="img/logo.png" width="24" alt="logo" />
           </div>
         </div>
       </nav>
+      <div id="sidebar" class="sidebar bg-white shadow">
+        <ul class="list-unstyled m-0 p-4">
+          <li>
+            <a href="home.html" class="text-decoration-none d-block py-2"
+              >Beranda</a
+            >
+          </li>
+          <li>
+            <a href="rute.html" class="text-decoration-none d-block py-2"
+              >Rute</a
+            >
+          </li>
+          <li>
+            <a href="kota.html" class="text-decoration-none d-block py-2"
+              >Kota Kami</a
+            >
+          </li>
+          <li>
+            <a href="berita.html" class="text-decoration-none d-block py-2"
+              >Wisata & Agen Travel</a
+            >
+          </li>
+          <li>
+            <a
+              href="list-resto.html"
+              class="text-decoration-none d-block py-2"
+              style="
+                padding-top: 5px;
+                border-radius: 20px;
+                background-color: #125d72;
+                color: white;
+              "
+              >Hotel & Restoran</a
+            >
+          </li>
+          <li>
+            <a href="berita.html" class="text-decoration-none d-block py-2"
+              >News</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none d-block py-2"
+              >Tentang Kami</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none d-block py-2">Kontak</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
     <main
-      class="container-fluid py-5"
-      style="padding-left: 3rem; padding-right: 3rem"
+      class="container position-relative pt-5"
+      style="padding-left: 8.5vw; padding-right: 8.5vw"
     >
       <!-- Header Section -->
       <section class="text-center mb-5">
         <div class="text-muted fw-semibold d-block align-items-center">
           <img src="img/logo.png" style="max-width: 50px" />
-          <strong style="font-size: large"
+          <strong style="font-size: larger"
             >Visit <span class="text-warning">Sulutenggo</span></strong
           >
         </div>
-        <h1 class="fw-bold display-5 mb-2">
+        <h1 class="fw-bold display-6">
           Temukan <span class="text-warning">Restoran</span>
           <span style="color: #125d72">Terbaik</span>
         </h1>
-        <p class="text-muted fs-5">
+        <p class="text-muted">
           Jelajahi pengalaman kuliner terbaik di Sulawesi Utara
         </p>
       </section>
 
       <!-- Search Section -->
-      <section class="mb-5">
+      <section class="mb-5 mx-auto" style="max-width: 960px">
         <div class="row justify-content-center">
-          <div class="col-md-6">
+          <div class="col-md-8">
             <div
               class="search-container bg-light rounded-4 shadow-sm p-4 border"
             >
@@ -143,10 +152,14 @@
       </section>
 
       <!-- Restaurant Cards Section -->
-      <section class="restaurants-grid" id="restaurantGrid">
+      <section
+        class="restaurants-grid mx-auto"
+        style="max-width: 960px"
+        id="restaurantGrid"
+      >
         <div class="row g-4">
           <!-- Restaurant Card 1 -->
-          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div
               class="restaurant-card bg-white rounded-4 shadow-sm overflow-hidden h-100 position-relative border"
             >
@@ -191,7 +204,7 @@
           </div>
 
           <!-- Restaurant Card 2 -->
-          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div
               class="restaurant-card bg-white rounded-4 shadow-sm overflow-hidden h-100 position-relative border"
             >
@@ -235,7 +248,7 @@
           </div>
 
           <!-- Restaurant Card 3 -->
-          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div
               class="restaurant-card bg-white rounded-4 shadow-sm overflow-hidden h-100 position-relative border"
             >
@@ -280,7 +293,7 @@
           </div>
 
           <!-- Restaurant Card 4 -->
-          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div
               class="restaurant-card bg-white rounded-4 shadow-sm overflow-hidden h-100 position-relative border"
             >
@@ -325,7 +338,7 @@
           </div>
 
           <!-- Restaurant Card 5 -->
-          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div
               class="restaurant-card bg-white rounded-4 shadow-sm overflow-hidden h-100 position-relative border"
             >
@@ -370,7 +383,7 @@
           </div>
 
           <!-- Restaurant Card 6 -->
-          <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
+          <div class="col-lg-3 col-md-6 col-sm-6">
             <div
               class="restaurant-card bg-white rounded-4 shadow-sm overflow-hidden h-100 position-relative border"
             >
@@ -418,58 +431,52 @@
       </section>
     </main>
 
-    <footer class="bg-light text-dark py-5 border-top">
+    <footer class="bg-dark text-light py-5">
       <div class="container">
         <div class="row g-4">
           <div class="col-md">
             <h5 class="text-warning">Visit Suluttenggo</h5>
-            <p class="text-muted">Searching How Wonderful Us</p>
+            <p>Searching How Wonderful Us</p>
           </div>
           <div class="col-md">
-            <h6 class="text-dark">Site</h6>
+            <h6 class="text-light">Site</h6>
             <ul class="list-unstyled small">
               <li>
-                <a href="#" class="text-decoration-none text-muted"
-                  >Kota Kami</a
-                >
+                <a href="#" class="text-decoration-none">Our Cities</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted"
-                  >Peta Wisata</a
-                >
+                <a href="#" class="text-decoration-none">Hot Maps</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted">Berita</a>
+                <a href="#" class="text-decoration-none">News</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted">Tautan</a>
+                <a href="#" class="text-decoration-none">Links</a>
               </li>
             </ul>
           </div>
           <div class="col-md">
-            <h6 class="text-dark">Perusahaan</h6>
-            <ul class="list-unstyled small">
+            <h6 class="text-light">Company</h6>
+            <ul class="list-unstyled small text-light">
               <li>
-                <a href="#" class="text-decoration-none text-muted">Peta</a>
+                <a href="#" class="text-decoration-none">Maps</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted">Iklan</a>
+                <a href="#" class="text-decoration-none">Advertising</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted"
-                  >Kit Proyek</a
-                >
+                <a href="#" class="text-decoration-none">Projects Kit</a>
               </li>
             </ul>
           </div>
           <div class="col-md">
-            <h6 class="text-dark">Hubungi Kami</h6>
-            <ul class="list-unstyled small">
+            <h6 class="text-light">Contact Us</h6>
+            <ul class="list-unstyled small text-light">
               <li>
-                <a href="#" class="text-decoration-none text-muted">Karir</a>
+                <a href="#" class="text-decoration-none">Jobs</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted">Syarat</a>
+                <a href="#" class="text-decoration-none">Terms</a>
               </li>
             </ul>
           </div>

@@ -23,45 +23,7 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body class="bg-white">
-    <div id="sidebar" class="sidebar bg-white shadow">
-      <ul class="list-unstyled m-0 p-4">
-        <li>
-          <a href="home.html" class="text-decoration-none d-block py-2"
-            >Beranda</a
-          >
-        </li>
-        <li><a href="#" class="text-decoration-none d-block py-2">Rute</a></li>
-        <li>
-          <a href="#" class="text-decoration-none d-block py-2">Kota Kami</a>
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none d-block py-2"
-            >Wisata & Agen Travel</a
-          >
-        </li>
-        <li>
-          <a
-            href="list-resto.html"
-            class="text-decoration-none d-block py-2"
-            style="
-              padding-top: 5px;
-              border-radius: 20px;
-              background-color: #125d72;
-              color: white;
-            "
-            >Hotel & Restoran</a
-          >
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none d-block py-2">Tentang Kami</a>
-        </li>
-        <li>
-          <a href="#" class="text-decoration-none d-block py-2">Kontak</a>
-        </li>
-      </ul>
-    </div>
-
+  <body class="bg-light">
     <header class="position-static">
       <nav
         id="navbar"
@@ -81,26 +43,76 @@
           <div
             class="d-flex align-items-center gap-2 bg-light px-2 py-1 rounded"
           >
-            <img src="img/logo.png" width="24" alt="logo" />
-            <strong>VisitSulutenggo</strong>
+            <strong>Visit<span class="text-warning">Sulutenggo</span></strong>
           </div>
         </div>
 
         <div class="d-flex align-items-center">
-          <div class="d-flex bg-dark rounded overflow-hidden">
-            <button class="btn btn-dark"><i class="bi bi-apple"></i></button>
-            <button class="btn btn-dark"><i class="bi bi-android2"></i></button>
-            <button class="btn btn-dark text-white fw-semibold">
-              Get Me Somewhere
-            </button>
+          <div
+            class="d-flex align-items-center gap-2 bg-light px-2 py-1 rounded"
+          >
+            <img src="img/logo.png" width="24" alt="logo" />
           </div>
         </div>
       </nav>
+      <div id="sidebar" class="sidebar bg-white shadow">
+        <ul class="list-unstyled m-0 p-4">
+          <li>
+            <a href="home.html" class="text-decoration-none d-block py-2"
+              >Beranda</a
+            >
+          </li>
+          <li>
+            <a href="rute.html" class="text-decoration-none d-block py-2"
+              >Rute</a
+            >
+          </li>
+          <li>
+            <a href="kota.html" class="text-decoration-none d-block py-2"
+              >Kota Kami</a
+            >
+          </li>
+          <li>
+            <a href="berita.html" class="text-decoration-none d-block py-2"
+              >Wisata & Agen Travel</a
+            >
+          </li>
+          <li>
+            <a
+              href="list-resto.html"
+              class="text-decoration-none d-block py-2"
+              style="
+                padding-top: 5px;
+                border-radius: 20px;
+                background-color: #125d72;
+                color: white;
+              "
+              >Hotel & Restoran</a
+            >
+          </li>
+          <li>
+            <a href="berita.html" class="text-decoration-none d-block py-2"
+              >News</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none d-block py-2"
+              >Tentang Kami</a
+            >
+          </li>
+          <li>
+            <a href="#" class="text-decoration-none d-block py-2">Kontak</a>
+          </li>
+        </ul>
+      </div>
     </header>
 
-    <main class="container-fluid py-4">
+    <main
+      class="container position-relative pt-4"
+      style="padding-left: 8.5vw; padding-right: 8.5vw"
+    >
       <!-- Back Button -->
-      <div class="container mb-4">
+      <div class="mb-4">
         <a
           href="list-resto.html"
           class="btn btn-outline-secondary rounded-pill"
@@ -110,59 +122,54 @@
       </div>
 
       <!-- Restaurant Hero Section -->
-      <section class="restaurant-hero mb-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div
-                class="hero-image-container rounded-4 overflow-hidden position-relative border"
-              >
-                <img
-                  src="img/resto1.jpg"
-                  class="hero-image w-100"
-                  alt="Rumah Makan Minahasa"
-                  onerror="this.src='img/placeholder-restaurant.jpg'"
-                />
-                <div
-                  class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end"
-                >
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-12">
-                        <div class="hero-content text-white mb-4">
-                          <div class="d-flex align-items-center gap-3 mb-3">
-                            <div class="rating d-flex align-items-center">
-                              <i class="bi bi-star-fill text-warning me-1"></i>
-                              <span class="fw-semibold">4.8</span>
-                              <span class="text-light ms-2">(127 ulasan)</span>
-                            </div>
-                          </div>
-                          <h1 class="display-4 fw-bold mb-2">
-                            Rumah Makan Minahasa
-                          </h1>
-                          <p class="lead mb-3">
-                            Masakan Minahasa autentik dengan bumbu tradisional
-                            dan bahan-bahan segar. Rasakan cita rasa asli
-                            Sulawesi Utara.
-                          </p>
-                          <div class="d-flex flex-wrap gap-3">
-                            <span class="text-light">
-                              <i class="bi bi-geo-alt me-1"></i>
-                              Jl. Sam Ratulangi No. 123, Manado
-                            </span>
-                            <span class="text-light">
-                              <i class="bi bi-clock me-1"></i>
-                              10:00 - 22:00
-                            </span>
-                            <span class="text-light">
-                              <i class="bi bi-telephone me-1"></i>
-                              +62 431 123456
-                            </span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+      <section class="restaurant-hero mb-5 mx-auto" style="max-width: 960px">
+        <div
+          class="hero-image-container rounded-4 overflow-hidden position-relative border"
+        >
+          <img
+            src="img/resto1.jpg"
+            class="hero-image w-100"
+            alt="Rumah Makan Minahasa"
+            style="height: 400px; object-fit: cover"
+            onerror="this.src='img/placeholder-restaurant.jpg'"
+          />
+          <div
+            class="hero-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-end"
+            style="
+              background: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.8),
+                transparent
+              );
+            "
+          >
+            <div class="w-100">
+              <div class="hero-content text-white mb-4 px-4">
+                <div class="d-flex align-items-center gap-3 mb-3">
+                  <div class="rating d-flex align-items-center">
+                    <i class="bi bi-star-fill text-warning me-1"></i>
+                    <span class="fw-semibold">4.8</span>
+                    <span class="text-light ms-2">(127 ulasan)</span>
                   </div>
+                </div>
+                <h1 class="display-4 fw-bold mb-2">Rumah Makan Minahasa</h1>
+                <p class="lead mb-3">
+                  Masakan Minahasa autentik dengan bumbu tradisional dan
+                  bahan-bahan segar. Rasakan cita rasa asli Sulawesi Utara.
+                </p>
+                <div class="d-flex flex-wrap gap-3">
+                  <span class="text-light">
+                    <i class="bi bi-geo-alt me-1"></i>
+                    Jl. Sam Ratulangi No. 123, Manado
+                  </span>
+                  <span class="text-light">
+                    <i class="bi bi-clock me-1"></i>
+                    10:00 - 22:00
+                  </span>
+                  <span class="text-light">
+                    <i class="bi bi-telephone me-1"></i>
+                    +62 431 123456
+                  </span>
                 </div>
               </div>
             </div>
@@ -171,7 +178,7 @@
       </section>
 
       <!-- Restaurant Details -->
-      <div class="container">
+      <div class="mx-auto" style="max-width: 960px">
         <div class="row g-4">
           <!-- Main Content -->
           <div class="col-lg-8">
@@ -179,7 +186,15 @@
             <section
               class="detail-section bg-white rounded-4 shadow-sm p-4 mb-4 border"
             >
-              <h3 class="section-title mb-4">
+              <h3
+                class="section-title mb-4"
+                style="
+                  color: #125d72;
+                  border-bottom: 2px solid #ffc107;
+                  display: inline-block;
+                  padding-bottom: 0.5rem;
+                "
+              >
                 <i class="bi bi-info-circle text-primary me-2"></i>
                 Tentang Restoran
               </h3>
@@ -199,14 +214,22 @@
             <section
               class="detail-section bg-white rounded-4 shadow-sm p-4 mb-4 border"
             >
-              <h3 class="section-title mb-4">
+              <h3
+                class="section-title mb-4"
+                style="
+                  color: #125d72;
+                  border-bottom: 2px solid #ffc107;
+                  display: inline-block;
+                  padding-bottom: 0.5rem;
+                "
+              >
                 <i class="bi bi-list-ul text-primary me-2"></i>
                 Menu Rekomendasi
               </h3>
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="menu-item p-3 bg-light rounded-3 border">
-                    <h6 class="fw-semibold mb-2 text-primary">
+                    <h6 class="fw-semibold mb-2" style="color: #125d72">
                       Rica-Rica Ayam
                     </h6>
                     <p class="text-muted small mb-0">
@@ -217,7 +240,9 @@
                 </div>
                 <div class="col-md-6">
                   <div class="menu-item p-3 bg-light rounded-3 border">
-                    <h6 class="fw-semibold mb-2 text-primary">Tinutuan</h6>
+                    <h6 class="fw-semibold mb-2" style="color: #125d72">
+                      Tinutuan
+                    </h6>
                     <p class="text-muted small mb-0">
                       Bubur tradisional Minahasa dengan sayuran segar dan bumbu
                       khas
@@ -226,7 +251,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="menu-item p-3 bg-light rounded-3 border">
-                    <h6 class="fw-semibold mb-2 text-primary">
+                    <h6 class="fw-semibold mb-2" style="color: #125d72">
                       Ikan Bakar Rica
                     </h6>
                     <p class="text-muted small mb-0">
@@ -237,7 +262,9 @@
                 </div>
                 <div class="col-md-6">
                   <div class="menu-item p-3 bg-light rounded-3 border">
-                    <h6 class="fw-semibold mb-2 text-primary">Cakalang Fufu</h6>
+                    <h6 class="fw-semibold mb-2" style="color: #125d72">
+                      Cakalang Fufu
+                    </h6>
                     <p class="text-muted small mb-0">
                       Ikan cakalang asap spesialitas Minahasa dengan aroma yang
                       khas
@@ -246,7 +273,9 @@
                 </div>
                 <div class="col-md-6">
                   <div class="menu-item p-3 bg-light rounded-3 border">
-                    <h6 class="fw-semibold mb-2 text-primary">Bubur Manado</h6>
+                    <h6 class="fw-semibold mb-2" style="color: #125d72">
+                      Bubur Manado
+                    </h6>
                     <p class="text-muted small mb-0">
                       Bubur tradisional khas Manado dengan kuah hangat dan bumbu
                       rempah
@@ -255,7 +284,9 @@
                 </div>
                 <div class="col-md-6">
                   <div class="menu-item p-3 bg-light rounded-3 border">
-                    <h6 class="fw-semibold mb-2 text-primary">Sambal Roa</h6>
+                    <h6 class="fw-semibold mb-2" style="color: #125d72">
+                      Sambal Roa
+                    </h6>
                     <p class="text-muted small mb-0">
                       Sambal pedas dengan ikan asap khas yang memberikan cita
                       rasa unik
@@ -269,7 +300,15 @@
             <section
               class="detail-section bg-white rounded-4 shadow-sm p-4 mb-4 border"
             >
-              <h3 class="section-title mb-4">
+              <h3
+                class="section-title mb-4"
+                style="
+                  color: #125d72;
+                  border-bottom: 2px solid #ffc107;
+                  display: inline-block;
+                  padding-bottom: 0.5rem;
+                "
+              >
                 <i class="bi bi-images text-primary me-2"></i>
                 Galeri
               </h3>
@@ -279,6 +318,7 @@
                     <img
                       src="img/gallery1.jpg"
                       class="gallery-image rounded-3 w-100 border"
+                      style="height: 200px; object-fit: cover; cursor: pointer"
                       alt="Interior Restoran"
                       onerror="this.src='img/placeholder-restaurant.jpg'"
                     />
@@ -289,6 +329,7 @@
                     <img
                       src="img/gallery2.jpg"
                       class="gallery-image rounded-3 w-100 border"
+                      style="height: 200px; object-fit: cover; cursor: pointer"
                       alt="Area Makan Outdoor"
                       onerror="this.src='img/placeholder-restaurant.jpg'"
                     />
@@ -299,6 +340,7 @@
                     <img
                       src="img/gallery3.jpg"
                       class="gallery-image rounded-3 w-100 border"
+                      style="height: 200px; object-fit: cover; cursor: pointer"
                       alt="Dapur"
                       onerror="this.src='img/placeholder-restaurant.jpg'"
                     />
@@ -315,11 +357,21 @@
               class="detail-section bg-white rounded-4 shadow-sm p-4 mb-4 sticky-top border"
               style="top: 100px"
             >
-              <h4 class="section-title mb-4">Info Restoran</h4>
+              <h4
+                class="section-title mb-4"
+                style="
+                  color: #125d72;
+                  border-bottom: 2px solid #ffc107;
+                  display: inline-block;
+                  padding-bottom: 0.5rem;
+                "
+              >
+                Info Restoran
+              </h4>
 
               <div class="info-item mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-clock text-primary me-2"></i>
+                  <i class="bi bi-clock me-2" style="color: #125d72"></i>
                   <h6 class="mb-0">Jam Buka</h6>
                 </div>
                 <div class="ms-4">
@@ -333,7 +385,7 @@
 
               <div class="info-item mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-telephone text-primary me-2"></i>
+                  <i class="bi bi-telephone me-2" style="color: #125d72"></i>
                   <h6 class="mb-0">Kontak</h6>
                 </div>
                 <div class="ms-4">
@@ -344,7 +396,7 @@
 
               <div class="info-item mb-3 pb-3 border-bottom">
                 <div class="d-flex align-items-center mb-2">
-                  <i class="bi bi-geo-alt text-primary me-2"></i>
+                  <i class="bi bi-geo-alt me-2" style="color: #125d72"></i>
                   <h6 class="mb-0">Lokasi</h6>
                 </div>
                 <div class="ms-4">
@@ -359,7 +411,10 @@
               </div>
 
               <div class="action-buttons">
-                <button class="btn btn-primary w-100 rounded-pill mb-2">
+                <button
+                  class="btn w-100 rounded-pill mb-2"
+                  style="background-color: #125d72; color: white"
+                >
                   <i class="bi bi-telephone me-2"></i>Hubungi Sekarang
                 </button>
                 <button class="btn btn-outline-primary w-100 rounded-pill mb-2">
@@ -375,58 +430,52 @@
       </div>
     </main>
 
-    <footer class="bg-light text-dark py-5 border-top mt-5">
+    <footer class="bg-dark text-light py-5">
       <div class="container">
         <div class="row g-4">
           <div class="col-md">
             <h5 class="text-warning">Visit Suluttenggo</h5>
-            <p class="text-muted">Searching How Wonderful Us</p>
+            <p>Searching How Wonderful Us</p>
           </div>
           <div class="col-md">
-            <h6 class="text-dark">Site</h6>
+            <h6 class="text-light">Site</h6>
             <ul class="list-unstyled small">
               <li>
-                <a href="#" class="text-decoration-none text-muted"
-                  >Kota Kami</a
-                >
+                <a href="#" class="text-decoration-none">Our Cities</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted"
-                  >Peta Wisata</a
-                >
+                <a href="#" class="text-decoration-none">Hot Maps</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted">Berita</a>
+                <a href="#" class="text-decoration-none">News</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted">Tautan</a>
+                <a href="#" class="text-decoration-none">Links</a>
               </li>
             </ul>
           </div>
           <div class="col-md">
-            <h6 class="text-dark">Perusahaan</h6>
-            <ul class="list-unstyled small">
+            <h6 class="text-light">Company</h6>
+            <ul class="list-unstyled small text-light">
               <li>
-                <a href="#" class="text-decoration-none text-muted">Peta</a>
+                <a href="#" class="text-decoration-none">Maps</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted">Iklan</a>
+                <a href="#" class="text-decoration-none">Advertising</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted"
-                  >Kit Proyek</a
-                >
+                <a href="#" class="text-decoration-none">Projects Kit</a>
               </li>
             </ul>
           </div>
           <div class="col-md">
-            <h6 class="text-dark">Hubungi Kami</h6>
-            <ul class="list-unstyled small">
+            <h6 class="text-light">Contact Us</h6>
+            <ul class="list-unstyled small text-light">
               <li>
-                <a href="#" class="text-decoration-none text-muted">Karir</a>
+                <a href="#" class="text-decoration-none">Jobs</a>
               </li>
               <li>
-                <a href="#" class="text-decoration-none text-muted">Syarat</a>
+                <a href="#" class="text-decoration-none">Terms</a>
               </li>
             </ul>
           </div>

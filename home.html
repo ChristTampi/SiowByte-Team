@@ -15,42 +15,43 @@
 
 </head>
 <body class="bg-light">
-    <div id="sidebar" class="sidebar bg-white shadow">
-        <ul class="list-unstyled m-0 p-4">
-            <li><a href="home.html" class="text-decoration-none d-block py-2" style="padding-top: 5px;border-radius: 20px;background-color: #125d72;color: white;">Beranda</a></li>
-            <li><a href="rute.html" class="text-decoration-none d-block py-2">Rute</a></li>
-            <li><a href="kota.html" class="text-decoration-none d-block py-2">Kota Kami</a></li>
-            <li><a href="#" class="text-decoration-none d-block py-2">Wisata & Agen Travel</a></li>
-            <li><a href="#" class="text-decoration-none d-block py-2">Hotel & Restoran</a></li>
-            <li><a href="#" class="text-decoration-none d-block py-2">Tentang Kami</a></li>
-            <li><a href="#" class="text-decoration-none d-block py-2">Kontak</a></li>
-        </ul>
-    </div>
-
+    
     <header class="position-static">
         <nav id="navbar" class="navbar navbar-light bg-white sticky-top py-2 px-3 d-flex align-items-center">
             <div class="d-flex align-items-center gap-2">
                 <button id="menuToggle" class="btn btn-light bg-light p-2 d-flex justify-content-center align-items-center">
                     <i id="menuIcon" class="fa-solid fa-bars-staggered icon-transition"></i>
                 </button>
-
+                
                 <div class="d-flex align-items-center gap-2 bg-light px-2 py-1 rounded">
                     <strong>Visit<span class="text-warning ">Sulutenggo</span></strong>
                 </div>
                 <!-- <button class="btn btn-light ms-2">😍</button> -->
             </div>
-
+            
             <div class="d-flex align-items-center">
                 <div class="d-flex align-items-center gap-2 bg-light px-2 py-1 rounded">
                     <img src="img/logo.png" width="24" alt="logo" />
                 </div>
             </div>
         </nav>
+        <div id="sidebar" class="sidebar bg-white shadow">
+            <ul class="list-unstyled m-0 p-4">
+                <li><a href="home.html" class="text-decoration-none d-block py-2" style="padding-top: 5px;border-radius: 20px;background-color: #125d72;color: white;">Beranda</a></li>
+                <li><a href="rute.html" class="text-decoration-none d-block py-2">Rute</a></li>
+                <li><a href="kota.html" class="text-decoration-none d-block py-2">Kota Kami</a></li>
+                <li><a href="berita.html" class="text-decoration-none d-block py-2">Wisata & Agen Travel</a></li>
+                <li><a href="#" class="text-decoration-none d-block py-2">Hotel & Restoran</a></li>
+                <li><a href="berita.html" class="text-decoration-none d-block py-2">News</a></li>
+                <li><a href="#" class="text-decoration-none d-block py-2">Tentang Kami</a></li>
+                <li><a href="#" class="text-decoration-none d-block py-2">Kontak</a></li>
+            </ul>
+        </div>
     </header>
 
     <div class="skyline-bg"></div>
 
-    <main class="container position-relative py-5" style="padding-left: 8.5vw; padding-right: 8.5vw;">
+    <main class="container position-relative pt-5" style="padding-left: 8.5vw; padding-right: 8.5vw;">
         <section class="text-center mb-5">
             <div class="text-muted fw-semibold d-block align-items-center">
                 <img src="img/logo.png" style="max-width: 50px;">
@@ -65,15 +66,15 @@
             <div class="row align-items-center g-4">
                 
                 <div class="col-md-6">
-                <h2 class="fw-bold text-primary-emphasis mb-1">Get Me Somewhere</h2>
-                <p class="text-dark small mb-4">Plan a journey on our web app</p>
+                <h2 class="fw-bold text-primary-emphasis mb-1">Buat Perjalananmu</h2>
+                <p class="text-dark small mb-4">Rencanakan kepergianmu dengan layanan kami</p>
 
                 <form>
                     <div class="mb-3">
-                    <input type="text" class="form-control rounded-3" placeholder="Start" />
+                    <input type="text" class="form-control rounded-3" placeholder="Awal" />
                     </div>
                     <div class="mb-3 position-relative">
-                    <input type="text" class="form-control rounded-3 pe-5" placeholder="End" />
+                    <input type="text" class="form-control rounded-3 pe-5" placeholder="Akhir" />
                     <span class="position-absolute top-50 end-0 translate-middle-y pe-3" style="margin-top: -28px;">
                         <button type="button" class="btn btn-sm btn-primary">
                         <i class="bi bi-arrow-down-up"></i>
@@ -81,8 +82,8 @@
                     </span>
                     </div>
                     <div class="d-flex justify-content-between align-items-center">
-                    <a href="#" class="text-decoration-none text-primary fw-semibold small">
-                        Now <i class="bi bi-arrow-right"></i>
+                    <a href="rute.html" class="text-decoration-none text-primary fw-semibold small">
+                        Telusuri <i class="bi bi-arrow-right"></i>
                     </a>
                     <button type="submit" class="btn btn-dark rounded-pill px-4 fw-semibold">GO</button>
                     </div>
@@ -101,9 +102,44 @@
             </div>
         </section>
 
+        <section class="kota text-white rounded-4 shadow-lg overflow-hidden mt-5 mx-auto position-relative" style="max-width: 960px; background-image: url('img/bgkota.png'); background-size: contain;">
+            <div class="row px-5 py-5">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="fw-semibold">Kota Kami</h2>
+                    <p>All the major tourist sites of the world. Navigate to our unique Sulut Region, increasing our regional quality of tourism.</p>
+                    <p class="kotap py-1 mb-2" style="border-width: 1px; border-style: solid; border-color: white; width: 90%; padding-left: 10px; margin-left:20px;">Manado</p>
+                    <p class="kotap py-1 mb-2" style="border-width: 1px; border-style: solid; border-color: white; width: 90%; padding-left: 10px; margin-left:20px;">Tomohon</p>
+                    <p class="kotap py-1 mb-2" style="border-width: 1px; border-style: solid; border-color: white; width: 90%; padding-left: 10px; margin-left:20px;">Bitung</p>
+                    <p class="kotap py-1 mb-4" style="border-width: 1px; border-style: solid; border-color: white; width: 90%; padding-left: 10px; margin-left:20px;">Kotamubagu</p>
+                    <div>
+                        <a href="kota.html" class="btn btn-warning fw-semibold rounded-pill px-4 py-2">
+                            Selengkapnya
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="ms-2" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M6.854 13.354a.5.5 0 0 1-.708-.708L10.293 8 6.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img
+                        src="img/kotakota.png"
+                        alt="Map Illustration"
+                        class="img-fluid w-100"
+                        style="max-height: 390px;"
+                        onerror="this.style.display='none'"
+                    />
+                </div>
+            </div>
+
+            <!-- <a href="kota.html" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: gray; font-size: 1.5rem; padding-right:20px">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a> -->
+        </section>
+
         <section class="kota text-white rounded-4 shadow-lg overflow-hidden mt-5 mx-auto position-relative" style="max-width: 960px; background-color: #14a2ba;">
             <div class="px-5 pt-5">
-                <h2 class="fw-semibold">Our Cities</h2>
+                <h2 class="fw-semibold">Wisata & Agen Travel</h2>
                 <p class="text-light">All the major tourist sites of the world. Navigate to our unique Sulut Region, increasing our regional quality of tourism.</p>
             </div>
             <div class="bg-city-banner position-relative">
@@ -114,24 +150,98 @@
                     onerror="this.style.display='none'" />
             </div>
 
+            <a href="kota.html" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: gray; font-size: 1.5rem; padding-right:20px">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </section>
+
+        <section class="kota text-white rounded-4 shadow-lg overflow-hidden mt-5 mx-auto position-relative" style="max-width: 960px; background-color: #14a2ba;">
+            <div class="px-5 pt-5">
+                <h2 class="fw-semibold">Hotel & Restoran</h2>
+                <p class="text-light">All the major tourist sites of the world. Navigate to our unique Sulut Region, increasing our regional quality of tourism.</p>
+            </div>
+            <div class="bg-city-banner position-relative">
+                <img src="img/manado.png"
+                    class="position-absolute w-100 h-100 object-fit-cover"
+                    alt="City image"
+                    style="margin-top:29px;"
+                    onerror="this.style.display='none'" />
+            </div>
+
+            <a href="kota.html" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: gray; font-size: 1.5rem; padding-right:20px">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </section>
+
+        <section class="kota text-black rounded-4 shadow-lg overflow-hidden mt-5 mx-auto position-relative container" style="max-width: 960px; background-color: whitesmoke; padding-bottom:0">
+            <div class="row">
+                <div class="col-lg-6 position-relative">
+                    
+                </div>
+
+                <div class="col-lg-6 px-5 pt-5 " style="height: 400px;">
+                    <h2 class="fw-semibold">SPKLU</h2>
+                    <p>
+                        All the major tourist sites of the world. Navigate to our unique Sulut Region, increasing our regional quality of tourism.
+                    </p>
+                </div>
+            </div>
+
+            <a href="#" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: gray; font-size: 1.5rem; padding-right:20px">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </section>
+
+        <section class="kota text-black rounded-4 shadow-lg overflow-hidden mt-5 mx-auto position-relative container" style="max-width: 960px; background-color: whitesmoke; padding-bottom:0">
+            <div class="row">
+                <div class="col-lg-6 position-relative">
+                    
+                </div>
+
+                <div class="col-lg-6 px-5 pt-5" style="height: 400px;">
+                    <h2 class="fw-semibold">Tentang Kami</h2>
+                    <p>
+                        All the major tourist sites of the world. Navigate to our unique Sulut Region, increasing our regional quality of tourism.
+                    </p>
+                </div>
+            </div>
+
             <a href="#" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: gray; font-size: 1.5rem; padding-right:20px">
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </section>
 
 
-        <section class="berita mt-5 py-5 px-md-5 mx-auto mb-5" >
+        <section class="berita mt-5 pt-5 px-md-5 mx-auto mb-5" >
             <h3 class="h5 fw-semibold mb-4">News</h3>
             <div class="row g-4">
                 <div class="col-sm-6 col-lg-4">
-                    <article class="card h-100 border shadow-sm">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/88b545e3-1e48-4bf0-ad70-5966283749b2.png"
+                    <article class="card h-auto border shadow-sm">
+                    <img src="img/news1.jpg"
                         class="card-img-top"
                         alt="News image"
+                        style="max-height: 200px"
                         onerror="this.style.display='none'" />
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">GodBless Places in the center of Manado City</h5>
-                        <p class="card-text small text-muted">Manado is city with the people are very tolerance</p>
+                        <h6 class="card-title">Menpar klaim wisata Manado berkelas dunia</h6>
+                        <p class="card-text small text-muted" style="max-height: 100px">Menteri Pariwisata menyatakan wisata di Manado berkelas dunia</p>
+                        <a href="detailBerita.html" class="mt-auto ms-auto fw-semibold text-decoration-none " style="color:gray; font-size: 1.5rem;">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card h-auto border shadow-sm">
+                    <img src="img/news2.jpg"
+                        class="card-img-top"
+                        alt="News image"
+                        style="max-height: 200px"
+                        onerror="this.style.display='none'" />
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">Ini Dia Objek Wisata Baru yang Lagi Hits di Manado</h6>
+                        <p class="card-text small text-muted" style="max-height: 100px">Kota Manado kini punya obyek wisata baru yang lagi hits</p>
                         <a href="#" class="mt-auto ms-auto fw-semibold text-decoration-none " style="color:gray; font-size: 1.5rem;">
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -140,15 +250,16 @@
                 </div>
 
                 <div class="col-sm-6 col-lg-4">
-                    <article class="card h-100 border shadow-sm">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/88b545e3-1e48-4bf0-ad70-5966283749b2.png"
+                    <article class="card h-auto border shadow-sm">
+                    <img src="img/news3.jpg"
                         class="card-img-top"
                         alt="News image"
+                        style="max-height: 200px"
                         onerror="this.style.display='none'" />
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">GodBless Places in the center of Manado City</h5>
-                        <p class="card-text small text-muted">Manado is city with the people are very tolerance</p>
-                        <a href="#" class="mt-auto ms-auto fw-semibold text-decoration-none" style="color:gray; font-size: 1.5rem;">
+                        <h6 class="card-title">Pesona Puncak Kai Santi, Wisata Alam di Tomohon</h6>
+                        <p class="card-text small text-muted" style="max-height: 100px">Tomohon menawarkan pemandangan keren</p>
+                        <a href="#" class="mt-auto ms-auto fw-semibold text-decoration-none " style="color:gray; font-size: 1.5rem;">
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
@@ -156,28 +267,63 @@
                 </div>
 
                 <div class="col-sm-6 col-lg-4">
-                    <article class="card h-100 border shadow-sm">
-                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/88b545e3-1e48-4bf0-ad70-5966283749b2.png"
+                    <article class="card h-auto border shadow-sm">
+                    <img src="img/news4.jpg"
                         class="card-img-top"
                         alt="News image"
+                        style="max-height: 200px"
                         onerror="this.style.display='none'" />
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">GodBless Places in the center of Manado City</h5>
-                        <p class="card-text small text-muted">Manado is city with the people are very tolerance</p>
-                        <a href="#" class="mt-auto ms-auto fw-semibold text-decoration-none" style="color:gray; font-size: 1.5rem;">
+                        <h6 class="card-title">Menatap Wisata Mangrove Budo yang Menenangkan Hati</h6>
+                        <p class="card-text small text-muted" style="max-height: 100px">Wisata Hutan Mangrove di Desa Budo, Kabupaten Minahasa Utara</p>
+                        <a href="#" class="mt-auto ms-auto fw-semibold text-decoration-none " style="color:gray; font-size: 1.5rem;">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card h-auto border shadow-sm">
+                    <img src="img/news5.jpg"
+                        class="card-img-top"
+                        alt="News image"
+                        style="max-height: 200px"
+                        onerror="this.style.display='none'" />
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">5 Atraksi Wisata di Manado dan Sekitarnya yang Bikin Terkesan</h6>
+                        <p class="card-text small text-muted" style="max-height: 100px">Coba dan mampir untuk menikmati 5 atraksi wisata di Manado</p>
+                        <a href="#" class="mt-auto ms-auto fw-semibold text-decoration-none " style="color:gray; font-size: 1.5rem;">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    </article>
+                </div>
+
+                <div class="col-sm-6 col-lg-4">
+                    <article class="card h-auto border shadow-sm">
+                    <img src="img/news6.jpeg"
+                        class="card-img-top"
+                        alt="News image"
+                        style="max-height: 200px"
+                        onerror="this.style.display='none'" />
+                    <div class="card-body d-flex flex-column">
+                        <h6 class="card-title">Walikota Ajak Rakyat Basembayang Untuk Kota Manado </h6>
+                        <p class="card-text small text-muted" style="max-height: 100px">Manado Kota Doa</p>
+                        <a href="#" class="mt-auto ms-auto fw-semibold text-decoration-none " style="color:gray; font-size: 1.5rem;">
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
                     </div>
                     </article>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <button class="btn btn-warning fw-semibold rounded-pill px-4 py-2">
-                    Selengkapnya
+            <div class="text-center mt-5">
+                <a href="berita.html" class="btn btn-warning fw-semibold rounded-pill px-4 py-2">
+                    Lainnya
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="ms-2" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M6.854 13.354a.5.5 0 0 1-.708-.708L10.293 8 6.146 3.854a.5.5 0 1 1 .708-.708l4.5 4.5a.5.5 0 0 1 0 .708l-4.5 4.5z"/>
                     </svg>
-                </button>
+                </a>
             </div>
         </section>
     </main>

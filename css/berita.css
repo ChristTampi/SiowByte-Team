@@ -23,7 +23,7 @@ body {
 }
 
 #menuToggle:hover{
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.314);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.434);
     transition: box-shadow 0.3s ease;
 }
 
@@ -40,7 +40,7 @@ body {
     left: -250px; 
     width: 250px; 
     height: 100%; 
-    background-color: white; 
+    background-color: #11596c; 
     z-index: 1040; 
     transition: all 0.3s ease; 
     -webkit-transition: all 0.3s ease; 
@@ -54,7 +54,7 @@ body {
 }
 
 .sidebar ul li a{
-    color: black;
+    color: white;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -76,7 +76,7 @@ body {
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
-    background-color: #d9d9d9;
+    background-color: #0f5265;
 }
 #navbar.scrolled {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -84,39 +84,7 @@ body {
     width: 100%;
 }
 
-.skyline-bg {
-    background: 
-        linear-gradient(to bottom, rgba(139, 139, 139, 0), #ffffffc2 90%),
-        url('../img/bg_gedung.png');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
-    position: relative;
-    /* top: 100px; */
-    height: 330px;
-    width: 100vw;
-    margin-bottom: -40px;
-}
-
-main{
-    top: -220px;
-}
-
 .kota:hover{
-    transform: scale(1.02); 
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.366) !important;
-    transition: box-shadow 0.3s ease;
-}
-.kota:hover i{
-    transform: scale(1.4);
-}
-
-.kotap:hover{
-    background-color: white;
-    color: black;
-}
-
-.berita article:hover{
     transform: scale(1.02);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.366) !important;
     transition: box-shadow 0.3s ease;
@@ -125,14 +93,13 @@ main{
     -ms-transform: scale(1.02);
     -o-transform: scale(1.02);
 }
-.berita article:hover i{
+.kota:hover i{
     transform: scale(1.4);
 }
 
-.bg-city-banner {
-    height: 270px;
-    background-color: #14a2ba;
-    overflow: hidden;
+.berita article:hover{
+    background-color: #e7f6f9;
+    transition: box-shadow 0.3s ease;
 }
 
 footer li a{

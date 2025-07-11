@@ -16,60 +16,70 @@
 
 </head>
 <body class="bg-light">
-    <div id="sidebar" class="sidebar bg-white shadow">
-        <ul class="list-unstyled m-0 p-4">
-            <li><a href="home.html" class="text-decoration-none d-block py-2">Beranda</a></li>
-            <li><a href="rute.html" class="text-decoration-none d-block py-2">Rute</a></li>
-            <li><a href="kota.html" class="text-decoration-none d-block py-2" style="padding-top: 5px;border-radius: 20px;background-color: #125d72;color: white;">Kota Kami</a></li>
-            <li><a href="#" class="text-decoration-none d-block py-2">Wisata & Agen Travel</a></li>
-            <li><a href="#" class="text-decoration-none d-block py-2">Hotel & Restoran</a></li>
-            <li><a href="#" class="text-decoration-none d-block py-2">Tentang Kami</a></li>
-            <li><a href="#" class="text-decoration-none d-block py-2">Kontak</a></li>
-        </ul>
-    </div>
-
+    
     <header class="position-static">
         <nav id="navbar" class="navbar navbar-light bg-white sticky-top py-2 px-3 d-flex align-items-center">
             <div class="d-flex align-items-center gap-2">
                 <button id="menuToggle" class="btn btn-light bg-light p-2 d-flex justify-content-center align-items-center">
                     <i id="menuIcon" class="fa-solid fa-bars-staggered icon-transition"></i>
                 </button>
-
+                
                 <div class="d-flex align-items-center gap-2 bg-light px-2 py-1 rounded">
                     <strong>Visit<span class="text-warning ">Sulutenggo</span></strong>
                 </div>
                 <!-- <button class="btn btn-light ms-2">😍</button> -->
             </div>
-
+            
             <div class="d-flex align-items-center">
                 <div class="d-flex align-items-center gap-2 bg-light px-2 py-1 rounded">
                     <img src="img/logo.png" width="24" alt="logo" />
                 </div>
             </div>
         </nav>
+        <div id="sidebar" class="sidebar bg-white shadow">
+            <ul class="list-unstyled m-0 p-4">
+                <li><a href="home.html" class="text-decoration-none d-block py-2">Beranda</a></li>
+                <li><a href="rute.html" class="text-decoration-none d-block py-2">Rute</a></li>
+                <li><a href="kota.html" class="text-decoration-none d-block py-2" style="padding-top: 5px;border-radius: 20px;background-color: #125d72;color: white;">Kota Kami</a></li>
+                <li><a href="wisataAgen.html" class="text-decoration-none d-block py-2">Wisata & Agen Travel</a></li>
+                <li><a href="#" class="text-decoration-none d-block py-2">Hotel & Restoran</a></li>
+                <li><a href="berita.html" class="text-decoration-none d-block py-2">News</a></li>
+                <li><a href="#" class="text-decoration-none d-block py-2">Tentang Kami</a></li>
+                <li><a href="#" class="text-decoration-none d-block py-2">Kontak</a></li>
+            </ul>
+        </div>
     </header>
-
+    
     <div class="skyline-bg"></div>
 
-    <main class="container position-relative py-5" style="padding-left: 8.5vw; padding-right: 8.5vw;">
+    <main class="container position-relative pt-5" style="padding-left: 8.5vw; padding-right: 8.5vw;">
         <section class="text-center mb-5">
             <h1 class="fw-bold display-6">
             KOTA KAMI
             </h1>
         </section>
 
-        <section class="text-white rounded-4 shadow-lg overflow-hidden mt-5 mx-auto position-relative" style="max-width: 960px; background-color: #14a2ba;">
-            <div class="px-5 pt-5">
-                <h2 class="fw-semibold">Temukan Kami Dimana Saja</h2>
-                <p class="text-light justify-text">All the major tourist sites of the world. Navigate to our unique Sulut Region, increasing our regional quality of tourism.</p>
+        <section class="kota text-white rounded-4 shadow-lg overflow-hidden mt-5 mx-auto position-relative" style="max-width: 960px; background-image: url('img/bgkota.png'); background-size: contain;">
+            <div class="row px-5">
+                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                    <h2 class="fw-semibold">Temukan Kami Dimana Saja!</h2>
+                    <p>All the major tourist sites of the world. Navigate to our unique Sulut Region, increasing our regional quality of tourism.</p>
+                </div>
+
+                <div class="col-md-6 text-center pt-2">
+                    <img
+                        src="img/kotakota.png"
+                        alt="Map Illustration"
+                        class="img-fluid w-100"
+                        style="max-height: 390px; "
+                        onerror="this.style.display='none'"
+                    />
+                </div>
             </div>
-            <div class="bg-city-banner position-relative">
-                <img src="img/manado.png"
-                    class="position-absolute w-100 h-100 object-fit-cover"
-                    alt="City image"
-                    style="margin-top:29px;"
-                    onerror="this.style.display='none'" />
-            </div>
+
+            <!-- <a href="kota.html" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: gray; font-size: 1.5rem; padding-right:20px">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a> -->
         </section>
 
         <section class="card-kota rounded-4 shadow-lg overflow-hidden mt-5 mx-auto position-relative" style="max-width: 960px; background-color: #32c8d5; color:#0d4454;padding-bottom: 0;">
@@ -88,7 +98,7 @@
                     onerror="this.style.display='none'" />
             </div>
 
-            <a href="#" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: white; font-size: 1.5rem; padding-right:20px">
+            <a href="rute.html" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: white; font-size: 1.5rem; padding-right:20px">
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </section>
@@ -110,7 +120,7 @@
                     onerror="this.style.display='none'" />
             </div>
 
-            <a href="#" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: white; font-size: 1.5rem; padding-right:20px">
+            <a href="rute.html" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: white; font-size: 1.5rem; padding-right:20px">
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </section>
@@ -132,7 +142,7 @@
                     onerror="this.style.display='none'" />
             </div>
 
-            <a href="#" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: white; font-size: 1.5rem; padding-right:20px">
+            <a href="rute.html" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: white; font-size: 1.5rem; padding-right:20px">
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </section>
@@ -154,7 +164,7 @@
                     onerror="this.style.display='none'" />
             </div>
 
-            <a href="#" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: white; font-size: 1.5rem; padding-right:20px">
+            <a href="rute.html" class="position-absolute end-0 bottom-0 m-3 fw-semibold text-decoration-none" style="color: white; font-size: 1.5rem; padding-right:20px">
                 <i class="fa-solid fa-arrow-right"></i>
             </a>
         </section>

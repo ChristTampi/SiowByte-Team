@@ -76,6 +76,15 @@ footer li a:hover {
    Dari HotelRestoran.css (Konten Utama)
 ================================= */
 
+/* =================================
+   Pengaturan Layout Konten Utama
+================================= */
+main {
+  max-width: 1140px; 
+  margin: 0 auto; 
+  padding: 3rem 1rem; /
+}
+
 /* Judul Seksi */
 .section-title {
   display: inline-block;
@@ -134,4 +143,16 @@ footer li a:hover {
   .splide__arrows {
     display: none;
   }
+}
+
+/* Ganti blok CSS ini */
+
+/* =================================
+   Penyesuaian Lebar Slider
+================================= */
+#hotel-recommendations,
+#restaurant-recommendations {
+    max-width: 860px; /* Diperkecil lagi agar lebih fokus di tengah */
+    margin-left: auto;
+    margin-right: auto;
 }
